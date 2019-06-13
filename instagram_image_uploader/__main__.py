@@ -1,6 +1,7 @@
 
 from instabotnet import execute
 import getpass
+import warnings
 
 script = """
 bot:
@@ -17,6 +18,7 @@ actions:
     edges:
       - upload_post
 """
+warnings.simplefilter("ignore")
 
 def main():
     print('inserisci l\'username instagram:')
@@ -35,7 +37,7 @@ def main():
         if not len(events):
             raise Exception('errore nel caricamento')
         url = events[0]['node']['url']
-        print('puoi trovare il post in "{url}"')
+        print(f'puoi trovare il post su "{url}"')
     except Exception as e:
         print(f'errore: probabilmente password sbagliata\n\n{e}')
 
