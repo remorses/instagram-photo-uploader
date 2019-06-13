@@ -4,7 +4,7 @@ from setuptools import setup
 
 
 setup(
-    name='TODO',
+    name='instagram_image_uploader',
     version=open('VERSION').read().strip(),
 
     description='TODO',
@@ -15,7 +15,7 @@ setup(
     author_email='daer.tommy@gmail.com',
     license='Apache Software License 2.0',
 
-    url='https://github.com/remorses/TODO',
+    url='https://github.com/remorses/instagram-image-uploader',
     keywords=['TODO'],
     install_requires=[x for x in open('./requirements.txt').read().strip().split('\n') if x.strip()],
     package_data={'': ['*.yaml', '*.json', '*.yml']},
@@ -27,7 +27,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
-    packages=['module'],
+    packages=['instagram_image_uploader'],
 )
 
 
