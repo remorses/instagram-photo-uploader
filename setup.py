@@ -15,7 +15,7 @@ setup(
     author_email='daer.tommy@gmail.com',
     license='Apache Software License 2.0',
 
-    url='https://github.com/remorses/instagram-image-uploader',
+    url='https://github.com/remorses/instagram-photo-uploader',
     keywords=['TODO'],
     install_requires=[x for x in open('./requirements.txt').read().strip().split('\n') if x.strip()],
     package_data={'': ['*.yaml', '*.json', '*.yml']},
